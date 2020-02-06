@@ -1,0 +1,25 @@
+.drawerBurger {
+    &-main {
+        &-nav {
+            &-list {
+                &-link {
+                    font-size: 1.5em;
+                }
+                &-admin {
+                  font-weight: bold;
+                  font-size: 1.5em;
+                  color: goldenrod;
+                  &-link {
+                    color: goldenrod;
+                  }
+                }
+            }
+        }
+    }
+}
+
+
+.ant-drawer-title {
+    font-size: 25px;
+}
+

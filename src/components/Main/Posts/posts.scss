@@ -1,0 +1,722 @@
+p {
+  margin-bottom: 0;
+}
+
+.posts {
+
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+  margin-bottom: 3em;
+
+  @media only screen and (min-width : 1px) {
+    box-shadow: none;
+
+    &-divider {
+      border: 1px solid lightgray;
+      margin: 0 1em;
+    }
+  }
+  @media only screen and (min-width : 1200px) {
+    box-shadow: none;
+  }
+  
+  @media only screen and (min-width : 1px) {
+    
+    &-global {
+
+      &-imageBox {
+
+        &-div {
+
+          height: 240px;
+          display: flex;
+
+          img {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+      &-content {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: white;
+        padding: 1em 1em 0.5em;
+
+        &-header {
+          
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 1em;
+
+          &-titleOptions {
+
+            display: flex;
+            justify-content: space-between;
+
+            &-nickname {
+              font-weight: bold;
+              font-size: 1.1em;
+            }
+
+            &-optionsBox {
+              display: flex;
+              align-items: center;
+
+              &-socials {
+                margin-right: 0.5em;
+                display: block;
+                text-indent: -9999px;
+                width: 25px;
+                height: 25px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-image: url('../../../materials/icones/socials.svg');
+                transition: all .2s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                  transform: scale(1.1);
+
+                }
+              }
+
+              &-likes {
+                margin-right: 0.5em;
+                display: block;
+                text-indent: -9999px;
+                width: 25px;
+                height: 25px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-image: url('../../../materials/icones/plain_likes.svg');
+                background-color: white;
+                padding: .5em;
+                color: #fff;
+                font-size: 20px;
+                text-decoration: none;
+                border: none;
+                transition: all .2s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                  transform: scale(1.1);
+
+                }
+              }
+
+              &-likesPlain {
+                margin-right: 0.5em;
+                display: block;
+                text-indent: -9999px;
+                width: 30px;
+                height: 30px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-image: url('../../../materials/icones/like.svg');
+                background-color: white;
+                padding: .5em;
+                color: #fff;
+                font-size: 20px;
+                text-decoration: none;
+                border: none;
+                transition: all .2s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                  transform: scale(1.1);
+
+                }
+              }
+
+              &-divider {
+                border: 1px solid rgb(100, 100, 100);
+                height: 20px;
+              }
+
+              &-options {
+                margin-left: 0.5em;
+                display: block;
+                text-indent: -9999px;
+                width: 32px;
+                height: 32px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-image: url('../../../materials/icones/moreOptions.svg');
+                transition: all .2s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                  transform: scale(1.1);
+
+                }
+              }
+            }
+          }
+
+          &-infos {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+
+            &-date {
+              margin-top: -0.5em;
+              padding-bottom: 1em;
+              border-bottom: 1px solid rgb(100, 100, 100);
+            }
+
+            &-likes {
+              padding-right: 3.3em;
+              margin-top: 0.2em;
+
+              &-bold {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        &-description {
+          padding:  0 1em;
+          max-height: 130px;
+          overflow: hidden;
+          transition: 1s;
+          cursor: pointer;
+
+          &::-webkit-scrollbar {
+            width: 6px;
+            height: 10px;
+          }
+          &::-webkit-scrollbar-button {
+            width: 0px;
+            height: 0px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #c3c3c3;
+            border: 0px none #ffffff;
+            border-radius: 50px;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background: #c3c3c3;
+          }
+          &::-webkit-scrollbar-thumb:active {
+            background: #a9a9a9;
+          }
+          &::-webkit-scrollbar-track {
+            background: #b0b0b0;
+            border: 0px none #ffffff;
+            border-radius: 100px;
+          }
+          &::-webkit-scrollbar-track:hover {
+            background: #c3c3c3;
+          }
+          &::-webkit-scrollbar-track:active {
+            background: #9f9c9c;
+          }
+          &::-webkit-scrollbar-corner {
+            background: transparent;
+          }
+
+          &-open {
+            overflow: initial;
+            transition: 1s;
+            cursor: pointer;
+          }
+        }
+
+        &-footer {
+
+          display: flex;
+          justify-content: space-between;
+          padding-top: 1em;
+          align-items: center;
+
+          &-nbComments {
+
+            border-top: 1px solid rgb(100, 100, 100);
+            font-size: 0.8em;
+            padding-top: 1em;
+            display: flex;
+            align-items: center;
+
+            &-text {
+              
+              margin-right: 0.5em;
+
+              &-bold {
+                font-weight: bold;
+                color: #9e2ddc;
+              }
+            }
+
+            &-openCommentsArrowDown {
+              display: block;
+              text-indent: -9999px;
+              width: 20px;
+              height: 20px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-image: url('../../../materials/icones/arrowOpen.svg');
+              margin: auto;
+              cursor: pointer;
+              transition: all .2s ease-in-out;
+
+                &:hover {
+                  transform: scale(1.3);
+
+                }
+
+              &-open {
+                display: none;
+              }
+            }
+          }
+
+          &-commentButton {
+            display: block;
+            text-indent: -9999px;
+            width: 40px;
+            height: 40px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../../materials/icones/discuss.svg');
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.3);
+
+            }
+          }
+        }
+      }
+    }
+
+    &-preview {
+      
+      widows: 100%;
+      padding-bottom: 0.6em;
+
+      &-allImages {
+
+        display: flex;
+        width: 290px;
+        margin: 0 auto;
+        justify-content: center;
+        overflow: auto;
+        
+        &-oneBox {
+
+          height: 40px;
+          width: 40px;
+          display: flex;
+          margin: 0 0.5em;
+          justify-content: space-around;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+            margin: 0 0.5em;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &-arrowUp {
+      display: none;
+      
+      &-open {
+        display: block;
+        text-indent: -9999px;
+        width: 35px;
+        height: 35px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../../../materials/icones/arrow_up.svg');
+        margin: auto;
+        border-top: 1px solid gray;
+        margin-top: 0.5em;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.3);
+
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width : 768px) {
+    
+    &-global {
+
+      &-imageBox {
+
+        &-div {
+
+          height: 300px;
+          background-color: #fbf4fd;
+        }
+      }
+
+      &-content {
+
+        padding: 2em 2em 0.5em;
+
+        &-header {
+          
+          margin-bottom: 1.5em;
+
+          &-titleOptions {
+
+            &-nickname {
+              font-size: 1.3em;
+            }
+
+            &-optionsBox {
+
+              &-socials {
+                width: 30px;
+                height: 30px;
+                margin-right: 1em;
+              }
+
+              &-likes {
+                margin-right: 1em;
+                width: 30px;
+                height: 30px;
+              }
+
+              &-divider {
+                border: 1px solid black;
+              }
+
+              &-options {
+                margin-left: 1em;
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+
+          &-infos {
+            font-size: 1em;
+
+            &-date {
+              padding-bottom: 1.5em;
+            }
+
+            &-likes {
+              padding-right: 3em;
+            }
+          }
+        }
+
+        &-description {
+          padding:  0 1.5em;
+          max-height: 150px;
+        }
+
+        &-footer {
+
+          padding-top: 1.5em;
+
+          &-nbComments {
+
+            font-size: 1em;
+            padding-top: 1.5em;
+
+            &-openComments {
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+
+    &-preview {
+      
+      padding-bottom: 0.5em;
+
+      &-allImages {
+
+        width: 350px;
+        
+        &-oneBox {
+
+          height: 60px;
+          width: 60px;
+
+        }
+      }
+    }
+
+    &-arrowUp {
+      display: none;
+      
+     margin-top: 0.5em;
+    }
+  }
+  
+  @media only screen and (min-width : 1200px) {
+
+    &-global {
+
+      display: flex;
+      justify-content: space-between;
+
+      &-imageBox {
+        
+        width: 50%;
+        border: none;
+
+        &-div {
+          height: 400px;
+          background-color: white;
+
+          &-changePage {
+              margin: 24em 0 0 1em;
+              text-indent: -9999px;
+              width: 40px;
+              height: 40px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-image: url('../../../materials/icones/open_new_tab2.svg');
+              position: absolute;
+              display: none;
+              transition: all .2s ease-in-out;
+
+              &:hover {
+                transform: scale(1.2);
+
+              }
+            }
+
+          &:hover {
+            .posts-global-imageBox-div-changePage {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &-content {
+
+        width: 50%;
+        padding: 2.5em 2.5em 0.5em;
+        border-right: 1px solid lightgray;
+
+        &-header {
+          
+          margin-bottom: 1em;
+
+          &-titleOptions {
+
+            &-nickname {
+              font-size: 1.5em;
+            }
+
+            &-optionsBox {
+
+              &-socials {
+                width: 30px;
+                height: 30px;
+              }
+
+              &-likes {
+                margin-right: 1em;
+                width: 30px;
+                height: 30px;
+              }
+
+              &-divider {
+                border: 1px solid black;
+              }
+
+              &-options {
+                margin-left: 1em;
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+
+          &-infos {
+            font-size: 1.1em;
+
+            &-date {
+              margin-top: -0.25em;
+              padding-bottom: 1.5em;
+            }
+
+            &-likes {
+              padding-right: 3em;
+            }
+          }
+        }
+
+        &-description {
+          max-height: 200px;
+          font-size: 1.1em;
+          overflow: auto;
+        }
+
+        &-footer {
+
+          padding-top: 1.5em;
+
+          &-commentButton {
+            width: 50px;
+            height: 50px;
+          }
+
+          &-nbComments {
+
+            font-size: 1em;
+            margin: 0;
+            padding-top: 1.5em;
+            margin-bottom: 0.5em;
+
+            &-text {
+              padding-bottom: 0.25em;
+            }
+
+            &-openComments {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    &-preview {
+      
+      padding: 1em 0 1em;
+  
+      &-allImages {
+  
+        width: 100%;
+        
+        &-oneBox {
+  
+          height: 75px;
+          width: 75px;
+
+          &-popOver {
+                
+            &-div {
+  
+              &-text {
+                color: gray;
+                
+              }
+            }
+          }
+  
+          &-overlayClass {
+  
+            .ant-popover-inner {
+              border-radius: 15px;
+              max-width: 500px;
+              max-height: 100px;
+              overflow: auto;
+
+              &::-webkit-scrollbar {
+                width: 6px;
+                height: 10px;
+              }
+              &::-webkit-scrollbar-button {
+                width: 0px;
+                height: 0px;
+              }
+              &::-webkit-scrollbar-thumb {
+                background: #c3c3c3;
+                border: 0px none #ffffff;
+                border-radius: 50px;
+              }
+              &::-webkit-scrollbar-thumb:hover {
+                background: #c3c3c3;
+              }
+              &::-webkit-scrollbar-thumb:active {
+                background: #a9a9a9;
+              }
+              &::-webkit-scrollbar-track {
+                background: #b0b0b0;
+                border: 0px none #ffffff;
+                border-radius: 100px;
+              }
+              &::-webkit-scrollbar-track:hover {
+                background: #c3c3c3;
+              }
+              &::-webkit-scrollbar-track:active {
+                background: #9f9c9c;
+              }
+              &::-webkit-scrollbar-corner {
+                background: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------
+// --------- MODAL IMAGE FULL SCREEN ----------
+
+@media only screen and (min-width : 1px) {
+  .ant-modal {
+      width: 70%;
+
+      &-body {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  
+  }
+  
+  // A partir de 768px de large : Vue windows
+    @media only screen and (min-width : 768px) {
+      
+    }
+    
+    // A partir de 1200px de large : Vue windows
+    @media only screen and (min-width : 1200px) {
+      
+    }
+
+
+// -----------------------------------
+// Modal AddTopic: 
+
+.modalAddDiscussion {
+
+  @media only screen and (min-width : 1px) {
+    .ant-modal-content {
+      display: block;
+      width: 90%;
+      margin: auto;
+      border-radius: 35px;
+      padding: 2em;
+    }
+  }
+  
+  @media only screen and (min-width : 768px) {
+    .ant-modal-content {
+      width: 520px;
+    }
+
+    @media only screen and (min-width : 1200px) {
+      .ant-modal-content {
+      }
+  }
+  }
+}

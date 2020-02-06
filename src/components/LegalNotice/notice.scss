@@ -1,0 +1,60 @@
+.wrapper {
+
+  @media only screen and (min-width :1px) {
+
+  width: 315px;
+  margin: 6em auto;
+
+  &-notice {
+
+    &-icon {
+
+      }
+
+    &-main {
+
+      margin: auto;
+
+      &-content {
+        
+        margin: 3em;
+
+        &-title {
+
+          font-size: 1em;
+          height: 55px;
+          color: rgb(13,106,217);
+          font-weight: bold;
+          text-align: center;
+          border-bottom: solid 1px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &-text {
+          margin: 1em;
+        }
+      }   
+    }
+  }
+}
+
+  @media only screen and (min-width :768px) {
+
+    width: 600px;
+    margin: 10em auto;
+
+  }
+
+  @media only screen and (min-width :1200px) {
+
+    width: 800px;
+    margin: 12em auto;
+
+  }
+
+  @media only screen and (min-width :1500px) {
+    font-size: 1.2em;
+  }
+}

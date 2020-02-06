@@ -1,0 +1,216 @@
+.profile {
+
+  @media only screen and (min-width :1px) {
+    margin-top: 8em;
+
+    &-title {
+
+      display: flex;
+      justify-content: center;
+      font-size: 1.3em;
+
+      &-child {
+
+        &-name {
+          display: block;
+          text-align: center;
+          font-size: 1.2em;
+          font-weight: bold;
+          color: rgb(14, 90, 182);
+        }
+      }
+    }
+
+    &-avatar {
+      
+      width: 55%;
+      margin: auto;
+
+      &-block {
+
+        &-change {
+          display: none;
+          margin-right: 0.5em;
+          text-indent: -9999px;
+          width: 25px;
+          height: 25px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-image: url('../../materials/images/socialmedia.svg');
+        }
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
+    
+    &-divider {
+      width: 70%;
+      border-bottom: 1px solid gray;
+      margin: auto;
+      margin-top: 2em;
+    }
+
+    &-description {
+      width: 90%;
+      margin: 2em auto;
+      color: black;
+
+      &-label {
+        margin-bottom: 0.25em;
+      }
+
+      &-text {
+        border-left: 1px solid gray;
+        padding-left: 1em;
+        margin-left: 1em;
+        color: rgb(119, 119, 119);
+      }
+    }
+
+    &-parameters {
+      margin: 2em auto;
+      width: 90%;
+
+      .ant-collapse.ant-collapse-icon-position-left.profile-parameters-collapse {
+        border: none;
+
+        .ant-collapse-item.profile-parameters-collapse-panel {
+          .ant-collapse-header {
+            border: none;
+            padding: 0 0 0.5em 3em;
+            background: white;
+
+            .anticon.anticon-right.ant-collapse-arrow {
+              top: 42%;
+            }
+          }
+        }
+      }
+
+      &-collapse {
+        
+        &-panel {
+
+          &-box {
+
+            margin-bottom: 1em;
+
+            &-label {
+              text-align: center;
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+
+      &-info {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto;
+
+      &-popDelete {
+        .ant-popover-inner-content {
+          border: 1px solid red;
+        }
+      }
+
+      &-delete {
+        font-weight: bold;
+        display: inherit;
+        -webkit-align-items: center;
+        align-items: center;
+        margin-right: 1em;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-align: center;
+        height: 40px;
+        font-size: 1.2em;
+        padding: 0.3em 2em;
+        background-color: #FA5A5A;
+        color: white;
+        cursor: pointer;
+
+      }
+
+      &-deconnexion {
+        font-weight: bold;
+        display: inherit;
+        -webkit-align-items: center;
+        align-items: center;
+        margin-right: 1em;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-align: center;
+        height: 40px;
+        font-size: 1.2em;
+        padding: 0.3em 2em;
+        background-color: rgb(255, 136, 0);
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+@media only screen and (min-width :768px) {
+  margin: 8em auto;
+  width: 480px;
+  border-right: 1px solid rgb(158,45,220);
+  border-left: 1px solid rgb(158,45,220);
+}
+
+
+@media only screen and (min-width :1200px) {
+  width: 600px;
+}
+}
+
+
+
+
+/* tile uploaded pictures */
+.upload-list-inline .ant-upload-list-item {
+  float: left;
+  width: 200px;
+  margin-right: 8px;
+}
+.upload-list-inline .ant-upload-animate-enter {
+  animation-name: uploadAnimateInlineIn;
+}
+.upload-list-inline .ant-upload-animate-leave {
+  animation-name: uploadAnimateInlineOut;
+}
+
+
+// Modal Add Avatar:
+.modalAddAvatar {
+
+  @media only screen and (min-width : 1px) {
+    .ant-modal-content {
+      display: block;
+      width: 90%;
+      margin: auto;
+      border-radius: 35px;
+      padding: 2em;
+    }
+  }
+  
+  @media only screen and (min-width : 768px) {
+    .ant-modal-content {
+      width: 520px;
+    }
+
+    @media only screen and (min-width : 1200px) {
+      .ant-modal-content {
+      }
+  }
+  }
+}

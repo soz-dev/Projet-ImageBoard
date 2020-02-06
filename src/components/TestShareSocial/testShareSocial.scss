@@ -1,0 +1,58 @@
+.shareSocialMedia {
+    display: inline-flex;
+    width: 70px;
+    &-facebook {
+    width: 35px;
+    &-button {
+
+    }
+
+    }
+
+    &-twitter {
+    width: 35px;
+    &-button {
+
+        }
+
+    }
+
+  // A partir de 320px de large : Vue tablette
+  @media only screen and (min-width : 768px) {
+
+    &-facebook {
+
+    &-button {
+
+    }
+
+    }
+
+    &-twitter {
+
+    &-button {
+
+        }
+
+    }
+  }
+
+  @media only screen and (min-width : 1200px) {
+
+    &-facebook {
+    &-button {
+
+    }
+
+    }
+
+    &-twitter {
+
+    &-button {
+
+        }
+
+    }
+  }
+
+}

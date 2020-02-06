@@ -1,0 +1,197 @@
+.footer {
+
+  @media only screen and (min-width : 1px) {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 0.5px solid #0d6ad9;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+
+    &-content {
+
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      justify-content: center;
+
+      &-left {
+
+        &-addTopic {
+
+          display: block;
+          text-indent: -9999px;
+          width: 60px;
+          height: 60px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-image: url('../../materials/icones/plus.svg');
+        }
+
+        &-contacts {
+
+          display: none;
+        }
+      }
+
+      &-right {
+        margin-bottom: -4em;
+        font-size: 0.7em;
+        padding-right: 1em;
+        font-style: italic;
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (min-width : 768px) {
+
+    &-content {
+
+      &-right {
+
+        margin: 0;
+        font-size: 1em;
+
+        &-text {
+          color: rgb(156, 0, 0);
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width : 1200px) {
+
+    height: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    
+    &-content {
+
+      height: 60px;
+      display: flex;
+      align-content: center;
+      justify-content: flex-end;
+      align-items: center;
+      
+      &-left {
+
+        display: block;
+        margin: 0;
+
+        &-addTopic {
+
+          display: none;
+        }
+
+        &-contacts {
+
+          display: block;
+          display: flex;
+          align-items: center;
+
+          &-contact {
+            margin: 0 0.5em;
+            display: block;
+            text-indent: -9999px;
+            width: 45px;
+            height: 45px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../materials/icones/contact.svg');
+            transition: all .2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+
+            }
+          }
+
+          &-dev {
+            margin: 0 0.5em;
+            display: block;
+            text-indent: -9999px;
+            width: 45px;
+            height: 45px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../materials/icones/team.svg');
+            transition: all .2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+
+            }
+          }
+
+          &-dislaimer {
+            margin: 0 0.5em;
+            display: block;
+            text-indent: -9999px;
+            width: 55px;
+            height: 55px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../materials/icones/info.svg');
+            transition: all .2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+
+            }
+          }
+          
+          &-admin {
+            margin: 0 0.5em;
+            display: block;
+            text-indent: -9999px;
+            width: 45px;
+            height: 45px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../materials/icones/admin.svg');
+            transition: all .2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width : 1800px) {
+
+    &-content {
+      width: 1800px;
+      margin: auto;
+    }
+  }
+}
+
+// Modal AddTopic: 
+
+.modalAddTopicFooter {
+
+  @media only screen and (min-width : 1px) {
+    .ant-modal-content {
+      display: block;
+      width: 100%;
+      margin: auto;
+      border-radius: 35px;
+      padding: 2em;
+    }
+  }
+  
+  @media only screen and (min-width : 768px) {
+    .ant-modal-content {
+      width: 520px;
+    }
+  }
+}

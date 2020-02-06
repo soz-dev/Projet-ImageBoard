@@ -1,0 +1,93 @@
+.updateIcon {
+
+  @media only screen and (min-width : 1px) {
+    
+    &-title {
+      font-size: 1.3em;
+      margin: 1em 0;
+      padding: 0 0 1em;
+      text-align: center;
+      border-bottom: 1px solid lightgray;
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: flex-end;
+      border-top: 0.5px solid lightgray;
+      font-size: 1em;
+      margin-top: 2em;
+      padding-top: 1em;
+
+      &-cancel {
+        font-weight: bold;
+        display: inherit;
+        align-items: center;
+        margin-right: 1em;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-align: center;
+        height: 40px;
+        font-size: 1.2em;
+        padding: 0.3em 2em;
+        background-color: #FA5A5A;
+        color:white;
+      }
+
+      &-ok {
+        font-weight: bold;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-align: center;
+        height: 40px;
+        font-size: 1.2em;
+        padding: 0.3em 2em;
+        background-color: #82C8A0;
+        color:white;
+      }
+    }
+
+    p.ant-upload-text {
+      display: none;
+    }
+
+    p.ant-upload-hint {
+      display: none;
+    }
+
+    .ant-upload-list-item.ant-upload-list-item-done {
+      text-overflow: ellipsis;
+      background-color: rgb(224, 252, 229);
+      
+      .ant-upload-list-item-info {
+        text-align: center;
+      }
+
+      svg {
+        display: none;
+      }
+      }
+  }
+
+  @media only screen and (min-width : 768px) {
+  }
+
+  @media only screen and (min-width : 1200px) {
+    p.ant-upload-text {
+      display: block;
+    }
+
+    p.ant-upload-hint {
+      display: block;
+    }
+
+    .ant-upload-list-item.ant-upload-list-item-done {
+      text-overflow: ellipsis;
+      background-color: rgb(224, 252, 229);
+      
+      .ant-upload-list-item-info {
+        text-align: center;
+      }
+      }
+  }
+}

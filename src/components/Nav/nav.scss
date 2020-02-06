@@ -1,0 +1,249 @@
+.nav {
+  
+  // A partir de 320px de large : Vue tablette
+  @media only screen and (min-width : 1px) {
+
+    background: rgb(158,45,220);
+    background: linear-gradient(51deg, rgba(158,45,220,1) 0%, rgba(13,106,217,1) 100%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    &-content {
+      height: 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-left {
+
+        display: contents;
+      
+        &-icon {
+          margin-left: 0.5em;
+          display: block;
+          text-indent: -9999px;
+          width: 40px;
+          height: 40px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-image: url('../../materials/icones/open_modal_mobile_white.svg');
+        }
+
+        &-title {
+          display: block;
+          text-indent: -9999px;
+          width: 100px;
+          height: 30px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-image: url('../../materials/title/title_white.svg');
+        }
+      }
+
+      &-right {
+
+          &-addTopic {
+            display: none;
+            cursor: pointer;
+          }
+
+          &-user {
+            margin-right: 0.5em;
+            display: block;
+            text-indent: -9999px;
+            width: 40px;
+            height: 40px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../materials/icones/profile_plain.svg');
+            object-fit: cover;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.2);
+
+            }
+          }
+        }
+      }
+    }
+
+  // A partir de 768px de large : Vue windows
+  @media only screen and (min-width : 768px) {
+
+    &-content {
+
+      &-right {
+
+        // display: inline-flex;
+
+        // &-addTopic {
+        //   width: 200px;
+        //   font-weight: bold;
+        //   display: inherit;
+        //   align-items: center;
+        //   margin-right: 2em;
+        //   border: 1px solid rgb(136, 0, 0);
+        //   border-radius: 5px;
+        //   text-align: center;
+        //   height: 40px;
+        //   font-size: 1.2em;
+        //   padding: 0.3em 2em;
+        //   background-color: white;
+        //   color:#4c6ca7
+        // }
+      }
+    }
+  }
+
+  // A partir de 1200px de large : Vue windows
+  @media only screen and (min-width : 1200px) {
+
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    &-content {
+      width: 1200px;
+      margin: auto;
+
+      &-left {
+
+        &-icon {
+          width: 60px;
+          height: 60px;
+          display: none;
+        }
+
+        &-title {
+          width: 145px;
+          height: 50px;
+        }
+      }
+
+      &-right {
+        
+        display: inline-flex;
+        align-items: center;
+        
+        &-addTopic {
+          
+          display: inline-flex;
+          margin-right: 10em;
+          align-items: center;
+          transition: all .2s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+
+            .nav-content-right-addTopic-text {
+              border-bottom: 1px solid white;
+            }
+
+          }
+          
+          &-icon {
+            display: block;
+            text-indent: -9999px;
+            width: 60px;
+            height: 60px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../materials/icones/plus-white.svg');
+          }
+
+          &-text {
+            color: white;
+            font-size: 1.2em;
+            margin-left: 0.5em;
+            font-weight: bold;
+          }
+          
+        // &:hover {
+
+        //   transform: scale(0.9);
+        //   border: 1px solid rgb(93, 163, 255);
+        //   background-color: rgb(160, 208, 240);
+        //   color:white;
+          }
+        }
+      }
+    }
+  }
+
+
+// Modal AddTopic: 
+
+.modalAddTopic {
+
+  @media only screen and (min-width : 1px) {
+    .ant-modal-content {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width : 768px) {
+    .ant-modal-content {
+      display: block;
+      width: 100%;
+      margin: auto;
+      border-radius: 35px;
+      padding: 2em;
+    }
+  }
+}
+
+// Drawer burger menu right : 
+
+  @media only screen and (min-width : 1px) {
+    .drawerUserConnect-drawer {
+      .ant-drawer-header {
+        border-bottom: 1px solid rgb(13,106,217);
+  
+        .ant-drawer-title {
+          color: rgb(172, 90, 216);
+        }
+      }
+    }
+    .drawerBurgerMenu {
+      .ant-drawer-header {
+        border-bottom: 1px solid rgb(172, 90, 216);
+  
+        .ant-drawer-title {
+          color: rgb(13,106,217);
+
+          .ant-drawer-body {
+            .drawerBurger-main-nav-list-link {
+              margin: 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  @media only screen and (min-width : 1200px) {
+  .drawerUserConnect-drawer {
+    .ant-drawer-header {
+      padding: 28px;
+      border-bottom: 1px solid rgb(13,106,217);
+
+      .ant-drawer-title {
+        color: rgb(172, 90, 216);
+      }
+    }
+  }
+}
+
+
+// DropDown
+
+.ant-dropdown.ant-dropdown-placement-bottomCenter {
+  .dropDownOptions {
+    border-radius: none;
+  }
+}

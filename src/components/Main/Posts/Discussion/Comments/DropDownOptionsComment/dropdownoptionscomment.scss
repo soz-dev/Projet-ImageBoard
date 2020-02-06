@@ -1,0 +1,87 @@
+.ant-dropdown-placement-bottomRight {
+  border-radius: 7px;
+}
+
+.dropDownOptionsComment {
+
+  width: 100%;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+
+  &-report {
+    color: black;
+    background: rgb(236, 236, 236);
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-form {
+
+    &-delete {
+      width: 100%;
+      color: white;
+      background-color: rgb(214, 65, 65);
+      border: none;
+      font-weight: bold;
+      height: 30px;
+      cursor: pointer;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    &-change {
+      width: 100%;
+      color: black;
+      background-color: rgb(255, 193, 122);
+      border: none;
+      font-weight: bold;
+      height: 30px;
+      text-align: center;
+      align-items: center;
+      cursor: pointer;
+      padding: 0.5em;
+
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+
+  &-report:hover {
+    color: gray;
+  }
+  
+}
+
+//-----------------------
+// Modal Change Description
+
+.modalChangeCommentDescription {
+  @media only screen and (min-width : 1px) {
+    .ant-modal-content {
+      display: block;
+      width: 90%;
+      margin: auto;
+      border-radius: 35px;
+      padding: 2em;
+    }
+  }
+  
+  @media only screen and (min-width : 768px) {
+    .ant-modal-content {
+      width: 520px;
+    }
+
+    @media only screen and (min-width : 1200px) {
+      .ant-modal-content {
+      }
+  }
+  }
+}

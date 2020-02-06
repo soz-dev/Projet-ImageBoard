@@ -1,0 +1,40 @@
+.ant-dropdown-placement-bottomRight {
+}
+
+.dropDownOptions {
+
+  width: 100%;
+  font-size: 0.8em;
+
+  &-report {
+    border-radius: 0px;
+    color: black;
+    background: rgb(236, 236, 236);
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    height: 30px;
+    border: none;
+  }
+
+  &-form {
+
+    &-delete {
+      border-radius: 2px;
+      width: 100%;
+      color: white;
+      background-color: rgb(224, 56, 56);
+      font-weight: bold;
+      height: 30px;
+      border: none;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  &-report:hover {
+    color: gray;
+  }
+}

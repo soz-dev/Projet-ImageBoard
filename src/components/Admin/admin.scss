@@ -1,0 +1,132 @@
+.wrapper-admin {
+  width: 80%;
+  margin: 6em auto;
+
+  &-iconReturn {
+    display: block;
+    text-indent: -9999px;
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../../materials/images/return.svg');
+  }
+
+  &-title {
+    &-child {
+      font-size: 1.6em;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  &-content {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin: 5em auto;
+    padding: 1em;
+    &-title {
+      &-child {
+        font-weight: bold;
+      }
+    }
+
+    &-list {
+      &-items {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        text-align: center;
+        &-item {
+          padding: 4px;
+          
+
+        }
+
+      }
+
+    }
+
+    &-buttons {
+      &-contact {
+        align-items: center;
+        border: 1px solid rgb(19, 88, 42);
+        padding: 0.3em 0.7em;
+        border-radius: 5px;
+        background-color: rgb(25, 145, 65);
+        color: white;
+        text-align: center;
+        width:33%;
+        margin: 1em auto;
+        display:inherit;
+      }
+
+      &-history {
+        align-items: center;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 0.3em 0.7em;
+        border-radius: 5px;
+        background-color: rgb(75, 9, 88);
+        color: white;
+        text-align: center;
+        width:33%;
+        margin: 1em auto;
+        display:inherit;
+      }
+
+      &-delete {
+        align-items: center;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 0.3em 0.7em;
+        border-radius: 5px;
+        color: black;
+        text-align: center;
+        width:33%;
+        margin: 1em auto;
+        display:inherit;
+
+      }
+
+      &-contact:hover {
+        color:whitesmoke;
+        font-weight: bold;
+      }
+
+      &-history:hover {
+        color:whitesmoke;
+        font-weight: bold;
+
+      }
+    }
+  }
+
+  @media only screen and (min-width :1200px) {
+
+    &-content {
+      &-title {
+        &-child {
+        }
+      }
+  
+      &-list {
+        &-items {
+          display: block;
+          &-item {
+          }
+        }
+      }
+  
+      &-buttons {
+        &-contact {
+          width:13%;
+        }
+        &-history {
+          width:13%;
+        }
+        &-delete {
+          width:13%;
+        }
+      } 
+    }
+  }
+}

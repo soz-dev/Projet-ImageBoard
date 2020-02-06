@@ -1,0 +1,94 @@
+.error {
+  &-text {
+    margin: 19em auto;
+    border: 1px solid lightgray;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+    width: 17em;
+    height: 15em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1517299321609-52687d1bc55a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  &-title {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    
+  }
+
+  &-content {
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  &-return {
+  
+    &-home {
+    margin: 1em auto;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: indianred;
+      }
+    }
+  }
+
+  &-image {
+    
+    &-content {
+      max-width: 100%;
+    
+    }
+  }
+
+
+
+  // Vue  windows
+  @media only screen and (min-width :1200px) {
+
+    &-text {
+      margin: 15em auto;
+      width: 57em;
+      height: 60em;
+      &-title {
+        font-size: 60px;
+        margin-top: 2em;
+
+        
+      }
+    
+      &-content {
+        
+      }
+  
+      
+      &-return {
+  
+        margin: 3em auto;
+        &-home {
+          }
+        }
+    }
+      &-image {
+        max-width: 15%;
+        height: 15%;
+    
+        &-load {
+        
+        }
+      }
+
+  }
+}
+
+
+.anticon {
+  padding: 0.4em;
+  font-size: 24px;
+}
+
+.anticon:hover {
+
+}

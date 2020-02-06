@@ -1,0 +1,32 @@
+.ant-dropdown.ant-dropdown-placement-bottomRight {
+  .dropDownOptions {
+    border-radius: 0px;
+    width: 150px;
+    font-size: 0.8em;
+    padding: 0;
+    background: white;
+
+    &-profile {
+      border-radius: 2px;
+      background: rgb(236, 236, 236);
+      font-weight: bold;
+      width: 100%;
+      height: 30px;
+      border: none;
+    }
+
+    &-deconnexion{
+      border-radius: 2px;
+      background: rgb(223, 130, 25);
+      width: 100%;
+      font-weight: bold;
+      height: 30px;
+      border: none;
+      color: rgb(235, 235, 235);
+
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,789 @@
+// Reset du margin-bottom de Antd:
+p {
+  margin-bottom: 0;
+}
+
+// Reset link:
+a {
+  color: black;
+
+  &:hover {
+    color: inherit
+  }
+}
+
+#separator4 {
+  border-left: 1px solid black;
+  height: 75%;
+}
+
+#separator5 {
+  @media only screen and (min-width : 1px) {
+    border: 0.5px solid black;
+    width: 75%;
+    margin: 0.5em auto;
+  }
+  @media only screen and (min-width : 1200px) {
+    display: none;
+  }
+}
+
+//-----------------------------------------------------------------
+// Style des posts:
+.posts {
+
+  // @media only screen and (min-width : 1px) {
+  //   &-separation {
+
+  //       border-bottom: 0.5px solid #0077ff;
+  //       margin: 2em auto;
+  //       width: 30%;
+  //   }
+  // }
+
+  // @media only screen and (min-width : 768px) {
+
+  // }
+
+  // @media only screen and (min-width : 1200px) {
+  //   &-separation {
+  //     width: 15%;
+  //   }
+  // }
+
+  &-global {
+
+    border: (1px 1px 0 1px) solid lightgray;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+    padding-bottom: 0.5em;
+    margin-bottom: 3em;
+
+    &-div {
+
+      margin: 0 auto;
+      display: none;
+      padding-top: 0.5em;
+
+      &-arrow {
+        margin: 0 auto;
+        display: inline-block;
+        text-align: center;
+        text-indent: -9999px;
+        width: 30px;
+        height: 30px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../../../materials/images/arrowOpen.svg');
+        cursor: pointer;
+        
+        &-open {
+          display: none;
+        }
+      }
+
+      &-arrowTurnTop {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width : 1px) {
+      &-preview {
+
+        widows: 100%;
+        
+        &-box {
+          
+          display: flex;
+          width: 290px;
+          margin: 0 auto;
+          justify-content: center;
+          overflow: auto;
+
+          &-imageBox {
+  
+            height: 40px;
+            width: 40px;
+            display: flex;
+            margin: 0 0.5em;
+            justify-content: space-around;
+  
+            img {
+              width: 100%;
+              object-fit: cover;
+              margin: 0 0.5em;
+            }
+          }
+        }
+
+
+        @media only screen and (min-width : 768px) {
+          display: none;
+        }
+        @media only screen and (min-width : 1200px) {
+          
+          display: block;
+          margin: 0.5em 0.5em;
+          width: 100%;
+
+          &-box {
+
+            display: flex;
+            margin: 0;
+            width: 100%;
+            justify-content: flex-start;
+            
+            &-imageBox {
+              justify-content: flex-start;
+              margin: 0 0.5em;
+              height: 60px;
+              width: 60px;
+
+              &-popOver {
+                
+                &-div {
+
+                  &-text {
+                    color: gray;
+                  }
+                }
+              }
+
+              &-overlayClass {
+
+                .ant-popover-inner {
+                  border-radius: 15px;
+                  max-width: 500px;
+                  max-height: 100px;
+                  overflow: auto;
+                }
+              }
+
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      }
+    }
+    
+    &-phone {
+      
+      // A partir de 320px de large : Vue tablette
+      @media only screen and (min-width : 1px) {
+        
+      padding-bottom: 0.25em;
+
+      &-header {
+
+        border: (0.5px 0.5px 0 0.5px) solid lightgrey;
+
+        &-image {
+          width: 100%;
+          height: 240px;
+          display: flex;
+          background-color: rgb(225, 234, 241);
+
+          img {
+            width: 100%;
+            object-fit: contain;
+            background-color: rgb(225, 234, 241);
+          }
+        }
+
+        &-boxContent {
+
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+          margin: 1em 0.5em 0 1.5em;
+
+          &-right {
+            display: none;
+          }
+
+          &-nickname {
+            font-size: 1.2em;
+            font-weight: bold;
+          }
+
+          &-likesSocials {
+
+            display: flex;
+
+            &-socials {
+              margin-right: 1.5em;
+              display: block;
+              text-indent: -9999px;
+              width: 25px;
+              height: 25px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-image: url('../../../materials/images/socialmedia.svg');
+            }
+
+            &-like {
+              margin-right: 0.5em;
+              display: block;
+              text-indent: -9999px;
+              width: 25px;
+              height: 25px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-image: url('../../../materials/images/like.svg');
+            }
+          }
+
+          &-infos {
+
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0.5em 0 1.5em;
+
+            &-date {
+              text-transform: uppercase;
+              font-size: 0.7em;
+              border-bottom: 1px solid gray;
+              padding-bottom: 1em;
+            }
+
+            &-likes {
+
+              font-size: 0.75em;
+              margin-top: 0.4em;
+
+              &-nb {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    
+
+      &-description {
+
+        &-text {
+          margin: 0.5em 2em 0.7em;
+          height: 85px;
+          overflow: hidden;
+        }
+
+        &-footer {
+
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0.5em 1em;
+          flex-direction: row-reverse;
+
+          &-preview {
+            display: none;
+          }
+
+          &-comment {
+            margin-left: 0.5em;
+            display: block;
+            text-indent: -9999px;
+            width: 30px;
+            height: 30px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../../materials/images/comment.svg');
+            order: 0;
+          }
+
+          &-nbCommentsBox {
+
+            display: flex;
+            flex-direction: column;
+            order: 1;
+
+            &-arrow {
+              margin: auto;
+              display: block;
+              text-indent: -9999px;
+              width: 20px;
+              height: 20px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-image: url('../../../materials/images/arrowOpen.svg');
+
+              &-open {
+                display: none;
+              }
+            }
+
+            &-arrowTurnTop {
+
+              display: none;
+
+              &-open {
+                margin: auto;
+                padding: 5px 0;
+                display: block;
+                text-indent: -9999px;
+                width: 20px;
+                height: 20px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-image: url('../../../materials/images/arrowOpen.svg');
+                transform: rotate(180deg);
+                height: 30px;
+              }
+            }
+
+            &-text {
+
+            font-size: 0.7em;
+            padding-top: 1.5em;
+            border-top: 1px solid black;
+
+              &-nb {
+                font-weight: bold;
+                font-size: 1.1em;
+                color: #D10000;
+              }
+            }
+          }
+
+          &-moreOptions {
+            margin-left: 0.5em;
+            display: block;
+            text-indent: -9999px;
+            width: 20px;
+            height: 20px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../../materials/images/more.svg');
+            order: 2;
+          }
+        }
+      }
+    }
+    
+    // A partir de 768px de large : Vue windows
+    @media only screen and (min-width : 768px) {
+
+      width: 100%;
+      margin: 0 auto;
+
+      &-header {
+
+        &-boxContent {
+
+          font-size: 1.3em;
+
+          &-likesSocials {
+            display: none;
+          }
+
+          &-right {
+
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            height: 2em;
+            margin-right: 1em;
+
+            &-socials {
+              margin-right: 0.8em;
+              display: block;
+              text-indent: -9999px;
+              width: 25px;
+              height: 25px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-image: url('../../../materials/images/socialmedia.svg');
+            }
+
+            &-likes {
+
+              display: flex;
+
+
+              &-like {
+                margin-right: 0.5em;
+                display: block;
+                text-indent: -9999px;
+                width: 30px;
+                height: 30px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-image: url('../../../materials/images/like.svg');
+              }
+            }
+
+            &-moreOptions {
+              margin-left: 0.5em;
+              display: block;
+              text-indent: -9999px;
+              width: 20px;
+              height: 20px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-image: url('../../../materials/images/more.svg');
+            }
+          }
+
+          &-infos {
+
+            font-size: 1.1em;
+            
+            &-date {
+              margin: 0 0.5em;
+            }
+
+            &-likes {
+              margin: 0 4em 0 3em;
+            }
+          }
+        }
+      }
+
+      &-description {
+
+        font-size: 1.1em;
+        width: 100%;
+        margin: 0.5em auto;
+
+
+        &-footer {
+          
+          flex-direction: row;
+          justify-content: space-between;
+          padding-top: 0.5em;
+
+          &-preview {
+            
+            display: block;
+            order: 0;
+            width: 33.33333%;
+
+            &-box {
+
+              justify-content: space-around;
+              overflow: auto;
+
+              &-imageBox {
+            
+                margin: 0 0.5em;
+                height: 50px;
+                width: 50px;
+                display: flex;
+      
+                img {
+                  width: 100%;
+                  object-fit: cover;
+                  margin: 0 0.5em;
+                }
+               }
+            }
+          }
+
+          &-comment {
+            width: 35px;
+            height: 35px;
+            margin-right: 2em;
+            order: 1;
+          }
+
+          &-nbCommentsBox {
+            margin-right: 10em;
+          }
+
+          &-moreOptions {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+    @media only screen and (min-width : 1200px) {
+      .posts-global-phone {
+        display: none;
+      }
+
+      .posts-global-phone-description-footer-nbCommentsBox-arrowTurnTop-open {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+
+      @media only screen and (min-width : 1200px) {
+
+        width: 1100px;
+        margin: 5em auto;
+        padding-bottom: 0;
+
+        &-div {
+
+          display: flex;
+        }
+      }
+
+      &-desktop {
+
+        &-responsive {
+        
+        @media only screen and (min-width : 1px) {
+          display: none;
+        }
+        
+        // A partir de 1200px de large : Vue windows
+        @media only screen and (min-width : 1200px) {
+          
+          width: 100%;
+          height: 450px;
+          display: flex;
+
+          &-open {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+          }
+
+          &-image {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            background-color: rgb(225, 234, 241);
+            
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          &-content {
+            
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 1.3em;
+            padding: 2em;
+            
+            &-top {
+
+              &-header {
+
+                &-boxContent {
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  font-size: 1.3em;
+                  padding: 0 1em;
+
+                  &-nickname {
+                    font-size: 1.1em;
+                    font-weight: bold;
+                  }
+
+                  &-right {
+          
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 2em;
+          
+                    &-likes {
+          
+                      display: flex;
+                      justify-content: space-between;
+
+                      &-socials {
+                        margin-right: 0.8em;
+                        display: block;
+                        text-indent: -9999px;
+                        width: 25px;
+                        height: 25px;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-image: url('../../../materials/images/socialmedia.svg');
+                      }
+          
+                      &-like {
+                        margin-right: 0.5em;
+                        display: block;
+                        text-indent: -9999px;
+                        width: 25px;
+                        height: 25px;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-image: url('../../../materials/images/like.svg');
+                      }
+                    }
+          
+                    &-moreOptions {
+                      margin-left:0.7em;
+                      display: block;
+                      text-indent: -9999px;
+                      width: 20px;
+                      height: 20px;
+                      background-size: 100%;
+                      background-repeat: no-repeat;
+                      background-image: url('../../../materials/images/more.svg');
+                    }
+                  }
+          
+                  &-infos {
+
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 0.9em;
+
+                    &-date {
+                      margin-left: 1.5em;
+                      margin-top: -0.5em;
+                      text-transform: uppercase;
+                      border-bottom: 1px solid black;
+                    }
+                    
+                    &-likes {
+
+                      margin: 0 3.2em;
+                      margin-top: -0.5em;
+                      font-size: 0.9em;
+                      
+                      &-nb {
+                        font-weight: bold;
+                      }
+                    }
+                  }
+                }
+              }
+
+              &-description {
+
+                margin: 2em 1em;
+                width: 77%;
+                height: 205px;
+                overflow: auto;
+
+                &:hover {
+                  color: gray;
+                  cursor: pointer;
+                }
+
+                &-open {
+                  cursor: pointer;
+                  margin: 2em 1em;
+                  width: 77%;
+                  height: 100%;
+                  overflow: auto;
+
+                  &:hover {
+                    color: gray;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+
+            &-bottom {
+
+              &-elements {
+                display: flex;
+                justify-content: space-between;
+                height: 3em;
+                align-items: center;
+                padding: 0 1em;
+
+                &-nbComments {
+                  font-size: 0.8em;
+                  border-top: 1px solid black;
+                  padding: 1em;
+
+                  &-nb {
+                    font-weight: bold;
+                    color: #D10000;
+                    font-size: 1.1em;
+                  }
+                }
+
+                &-newPage {
+                  margin-right: 0.5em;
+                  display: block;
+                  text-indent: -9999px;
+                  width: 25px;
+                  height: 25px;
+                  background-size: 100%;
+                  background-repeat: no-repeat;
+                  background-image: url('../../../materials/images/open_new_tab.svg');
+                }
+
+                &-comment {
+                  align-items: center;
+                  padding: 0.5em 1em;
+                  border-radius: 5px;
+                  background-color: white;
+                  border: 1px solid #D10000;
+                  transition: all .2s ease-in-out;
+                  cursor: pointer;
+
+                  &-inside {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &-logo {
+                      margin-right: 0.5em;
+                      display: block;
+                      text-indent: -9999px;
+                      width: 25px;
+                      height: 25px;
+                      background-size: 100%;
+                      background-repeat: no-repeat;
+                      background-image: url('../../../materials/images/comment.svg');
+                    }
+
+                    &-text {
+                      color: black;
+                    }
+                  }
+
+                  &:hover {
+
+                  transform: scale(1.1);
+                  border: 1px solid rgb(255, 168, 168);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+  @media only screen and (min-width : 1px) {
+    .ant-modal {
+        width: 70%;
+
+        &-body {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    
+    }
+    
+    // A partir de 768px de large : Vue windows
+      @media only screen and (min-width : 768px) {
+        
+      }
+      
+      // A partir de 1200px de large : Vue windows
+      @media only screen and (min-width : 1200px) {
+        
+      }

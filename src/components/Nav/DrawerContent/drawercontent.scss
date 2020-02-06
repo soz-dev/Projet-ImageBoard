@@ -1,0 +1,51 @@
+.drawerContentInscription {
+
+    @media only screen and (min-width : 1px) {
+
+      &-boxes {
+
+        margin-bottom: 2em;
+        padding-bottom: 2em;
+        border-bottom: 1px solid lightgray;
+
+        .ant-row.ant-form-item {
+          margin-bottom: 0;
+      }
+
+      .ant-col.ant-form-item-control-wrapper {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      button.ant-btn.ant-btn-primary {
+        font-size: 0.9em;
+        margin: 1em 0;
+        background: rgb(13,106,217);
+        background: linear-gradient(51deg, rgba(13,106,217,1) 0%, rgba(158,45,220,1) 100%)
+      }
+    }
+
+    &-connexion {
+      margin-top: 2em;
+
+      &-label {
+        margin-top: 2em;
+        margin-bottom: 1em;
+      }
+
+      &-div {
+
+        display: flex;
+          justify-content: flex-end;
+
+        button.ant-btn {
+          font-size: 0.9em;
+          color: #fff;
+          border-color: #1890ff;
+          background: rgb(13,106,217);
+          background: linear-gradient(51deg, rgba(13,106,217,1) 0%, rgba(158,45,220,1) 100%);
+        }
+      }
+    }
+  }
+}

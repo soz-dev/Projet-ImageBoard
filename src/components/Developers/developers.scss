@@ -1,0 +1,145 @@
+.wrapper {
+
+  margin: auto;
+
+  @media only screen and (min-width :1px) {
+
+  width: 80%;
+  margin: 6em auto;
+
+  &-developers {
+
+    margin: auto;
+    display: flex;
+    
+      &-iconReturn {
+        display: block;
+        text-indent: -9999px;
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../../materials/icones/return.svg');
+      }
+    
+    &-content  {
+      font-size: 1em;
+      border: 1px solid rgb(158,45,220);
+      margin: 1em auto;
+      text-align: center;
+      margin-bottom: 5em;
+      width: 250px;
+
+      ul {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &-group {
+        margin-top: 6em;
+      }
+      
+      &-title {
+        font-size: 1.6em;
+        text-align: center;
+        background: rgb(13,106,217);
+        background: linear-gradient(51deg, rgba(13,106,217,0.15) 0%, rgba(158,45,220,0.15) 100%);
+        margin-bottom: 0;
+        color: rgb(142, 173, 211);
+        font-weight: bold;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      &-text {
+        margin: 1em;
+      }
+    
+    }
+    
+    &-image {
+      font-size: 1.2em;
+      width:100%;
+      height: 70%;
+      object-fit: contain;
+      background: rgb(13,106,217);
+      background: linear-gradient(100deg, rgba(13,106,217,0.15) 0%, rgba(158,45,220,0.15) 100%);
+    }
+    
+    &-subtitles {
+      font-weight: bold;
+      &-links {
+        margin-top: 1em;
+        font-weight: bold;
+        color: rgb(13,106,217);
+      }
+    }
+  }
+}
+
+  @media only screen and (min-width :768px) {
+    margin-top: 10em;
+
+    
+    &-developers {
+      &-content {
+        width: 300px;
+      }
+
+      ul {
+        height: 60px;
+      }
+
+      &-subtitles {
+        font-weight: bold;
+        font-size: 1.2em;
+        &-links {
+          font-size: 1.1em;
+          margin-top: 1em;
+          font-weight: bold;
+          color: rgb(13,106,217);
+        }
+      }
+    }
+    
+    &-contact {
+      width: 800px;
+      margin: auto;
+    }
+  }
+
+  @media only screen and (min-width :1200px) {
+
+    margin: 12em auto;
+    width: 800px;
+    
+    &-developers {
+
+      ul {
+        margin: 0;
+        height: 110px;
+      }
+
+      &-content  {
+
+        height: 500px;
+        
+        &-group {
+          display:flex;
+          margin: 1em auto;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+      width: 300px;
+    }
+  }
+}
+  @media only screen and (min-width :1500px) {
+
+  }
+}

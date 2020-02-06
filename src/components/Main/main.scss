@@ -1,0 +1,90 @@
+.fonctionnalities {
+
+  margin-top: 6em;
+  @media only screen and (min-width : 1px) {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: -4em;
+    
+    &-catalog {
+      display: block;
+      text-indent: -9999px;
+      width: 35px;
+      height: 35px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-image: url('../../materials/icones/catalog.svg');
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @media only screen and (min-width : 768px) {
+
+    &-catalog {
+      width: 45px;
+      height: 45px;
+    }
+    
+  }
+
+  @media only screen and (min-width : 1200px) {
+    margin-top: 8em;
+    margin-bottom: -8.5em;
+
+    &-catalog {
+      width: 55px;
+      height: 55px;
+    }
+  }
+}
+
+
+.posts {
+  
+  // A partir de 320px de large : Vue tablette
+  @media only screen and (min-width : 1px) {
+    margin: 6em auto;
+  }
+  
+  // A partir de 768px de large : Vue windows
+  @media only screen and (min-width : 768px) {
+    margin: 7em auto 5em;
+  }
+  
+  // A partir de 1200px de large : Vue windows
+  @media only screen and (min-width : 1200px) {
+    margin: 12em auto 5em;
+    width: 1100px;
+  }
+}
+
+.ModalExplorer {
+
+  @media only screen and (min-width : 1px) {
+    .ant-modal-content {
+      display: block;
+      width: 90%;
+      margin: auto;
+      border-radius: 35px;
+      padding: 2em;
+    }
+  }
+  
+  @media only screen and (min-width : 768px) {
+    .ant-modal-content {
+      width: 520px;
+    }
+
+    @media only screen and (min-width : 1200px) {
+      .ant-modal-content {
+        width: 750px;
+      }
+  }
+  }
+}

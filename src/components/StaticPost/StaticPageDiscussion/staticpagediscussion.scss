@@ -1,0 +1,411 @@
+#posts-global-content-description {
+  overflow: visible;
+  padding:  0 1em;
+}
+
+.dividerMainDiscussion {
+
+  @media only screen and (min-width : 1px) {
+    background-color: #ffecc9;
+    height: 10px;
+    color: #ffecc9;
+  }
+
+  @media only screen and (min-width : 768px) {
+    background-color: #ffecc9;
+    height: 20px;
+    color: #ffecc9;
+  }
+
+  @media only screen and (min-width : 1200px) {
+    background-color: #ffecc9;
+    height: 30px;
+    color: #ffecc9;
+  }
+
+}
+
+.discussion {
+
+  &-global {
+
+    @media only screen and (min-width : 1px) {
+
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+      
+      &-desktop {
+        display: none;
+      }
+
+      &-phone {
+
+        &-main {
+
+          display: flex;
+          align-items: center;
+          background-color: #ffecc9;
+          border-bottom: 1px solid gray;
+
+          &-mainleft {
+
+            margin: 0 1%;
+
+              &-dot {
+              text-indent: -9999px;
+              display: block;
+              width: 10px;
+              height: 10px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-image: url('../../../materials/images/dot-yellow.svg');
+            }
+          }
+          &-mainright {
+
+            background-color: white;
+
+            &-box {
+              
+              display: flex;
+
+              &-image {
+                
+                width: 50%;
+                display: flex;
+                align-items: center;
+                background-color: #ffecc9;
+                
+                img {
+                  width: 100%;
+                  border: 0.5px solid lightgray;
+                }
+              }
+
+              &-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border: (0 0 0 0.5px) solid lightgray;
+                border-top: 2px solid #fca503;
+                width: 100%;
+
+                &-top {
+
+                  &-header {
+                    
+                    border-bottom: 0.5px solid lightgray;
+                    padding: 0.25em 0 0 0;
+
+                    &-nicknameLikes {
+                      
+                      display: flex;
+                      justify-content: space-between;
+                      padding: 0 0 0 0.2em;
+
+                      &-nickname {
+                        font-weight: bold;
+                      }
+
+                      &-likes {
+
+                        display: flex;
+
+                        &-like {
+                          margin-right: 0.5em;
+                          display: block;
+                          text-indent: -9999px;
+                          width: 20px;
+                          height: 20px;
+                          background-size: 100%;
+                          background-repeat: no-repeat;
+                          background-image: url('../../../materials/images/like.svg');
+                        }
+
+                        &-dislike {
+                          margin-right: 0.5em;
+                          display: block;
+                          text-indent: -9999px;
+                          width: 20px;
+                          height: 20px;
+                          background-size: 100%;
+                          background-repeat: no-repeat;
+                          background-image: url('../../../materials/images/dislike.svg');
+                        }
+                      }
+                    }
+
+                    &-infos {
+                      
+                      display: flex;
+                      justify-content: space-between;
+                      
+                      &-date {
+                        font-size: 0.7em;
+                        text-transform: uppercase;
+                        padding-left: 0.4em;
+                      }
+
+                      &-nbLikes {
+                        font-size: 0.75em;
+                        font-weight: bold;
+                        padding-right: 0.7em;
+                      }
+                    }
+                  }
+
+                  &-text {
+                    font-size: 0.85em;
+                    padding: 0.5em;
+                  }
+                }
+
+                &-bottom{
+
+                  border-top: 1.5px solid lightgray;
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 0.25em 0;
+
+                  &-commentButton {
+                    display: none;
+                  }
+
+                  &-commentIcon {
+                    margin-left: 45%;
+                    display: block;
+                    text-indent: -9999px;
+                    width: 23px;
+                    height: 23px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-image: url('../../../materials/images/comment.svg');
+                  }
+
+                  &-moreOptions {
+                    margin-right: 3%;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width : 768px) {
+      
+      &-phone {
+
+        &-main {
+
+          font-size: 1.2em;
+
+          &-mainleft {
+            
+            border-right: 2px solid #fca503;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 0.5em;
+
+              &-dot {
+                width: 20px;
+                height: 20px;
+              }
+            }
+
+            &-main-right {
+
+              &-box {
+
+                &-content {
+
+                  border-top: 3px solid #fca503;
+
+                  &-top {
+
+                    &-header {
+
+                      padding: 0.5em 1em;
+
+                      &-nicknameLikes {
+
+                        &-likes {
+
+                          &-like {
+                            width: 25px;
+                            height: 25px;
+                          }
+
+                          &-dislike {
+                            width: 25px;
+                            height: 25px;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  &-bottom {
+
+                    padding: 0.5em;
+                    align-items: center;
+
+                    &-commentIcon {
+                      width: 35px;
+                      height: 35px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @media only screen and (min-width : 1200px) {
+
+        &-phone {
+
+          &-main {
+
+            background-color: #ffecc9;
+            justify-content: flex-end;
+
+            &-mainleft{
+
+              height: 100px;
+              width: 80px;
+              border-right: 3px solid #fca503;
+              background-color: #ffecc9;
+              
+              &-dot {
+                width: 40px;
+                height: 40px;
+              }
+            }
+
+            &-mainright {
+
+              min-width: 93%;
+              background-color: white;
+
+              &-box {
+
+                font-size: 1.1em;
+
+                &-image {
+
+                  width: 300px;
+                }
+
+                &-content {
+
+                  border-top: 3px solid #fca503;
+
+                  &-top {
+
+                    &-header {
+
+                      border: none;
+                      
+                      &-nicknameLikes {
+
+                        flex-direction: row-reverse;
+
+                        padding: 0 2em;
+                        font-size: 1.2em;
+
+                        &-nickname {
+                          font-weight: inherit;
+                        }
+
+                        &-likes {
+
+                          &-like {
+                            width: 25px;
+                            height: 25px;
+                          }
+
+                          &-dislike {
+                            width: 25px;
+                            height: 25px;
+                          }
+                        }
+                      }
+
+                      &-infos {
+
+                        flex-direction: row-reverse;
+                        padding: 0 2.5em;
+                        
+                        &-date {
+                          padding-bottom: 1em;
+                          border-bottom: 1px solid black;
+                        }
+                      }
+                    }
+
+                    &-text {
+                      width: 70%;
+                      margin: 1em 10% 1em 11%;
+                    }
+                  }
+
+                  &-bottom {
+
+                    padding-top: 0.5em;
+
+                    &-commentIcon {
+                      display: none;
+                    }
+
+                    &-commentButton {
+
+                      display: block;
+                      align-items: center;
+                      margin-right: 2em;
+                      padding: 0.3em 1em;
+                      border-radius: 5px;
+                      border: 1px solid #0384fc;
+                      background-color: #bfe0ff;
+                      margin-left: 40%;
+
+                      &-inside {
+
+                        display: flex;
+                        justify-content: space-between;
+
+                        &-logo {
+                          margin-right: 0.5em;
+                          display: block;
+                          text-indent: -9999px;
+                          width: 25px;
+                          height: 25px;
+                          background-size: 100%;
+                          background-repeat: no-repeat;
+                          background-image: url('../../../materials/images/comment_yell.svg');
+                        }
+
+                        &-text {
+                          color: black;
+                        }
+                      }
+                    }
+                    
+                    &-moreOptions {
+                      font-size: 1.5em;
+                      margin-top: -0.4em;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,366 @@
+.comment  {
+
+  @media only screen and (min-width : 1px) {
+
+    &-main {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: #fbf4fd;
+      border-top: 2px dashed #d1bedb;
+
+      &-emptyDiv {
+        width: 0%;
+
+      }
+
+      &-imageBox {
+
+        width: 25%;
+        margin: 10px 0 10px;
+        background-color: #f6ebfa;
+
+
+        img {
+  
+          width: 100%;
+          object-fit: cover;
+          height: 70px;
+          background-color: #f6ebfa;
+        }
+      }
+
+      &-content {
+        width: 75%;
+        background-color: white;
+        display: flex;
+        padding: 0.5em;
+
+        &-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 65%;
+          font-size: 0.9em;
+          padding-right: 0.5em;
+
+          &-text {
+            overflow: auto;
+            max-height: 65px;
+
+            &::-webkit-scrollbar {
+              width: 6px;
+              height: 10px;
+            }
+            &::-webkit-scrollbar-button {
+              width: 0px;
+              height: 0px;
+            }
+            &::-webkit-scrollbar-thumb {
+              background: #c3c3c3;
+              border: 0px none #ffffff;
+              border-radius: 50px;
+            }
+            &::-webkit-scrollbar-thumb:hover {
+              background: #c3c3c3;
+            }
+            &::-webkit-scrollbar-thumb:active {
+              background: #a9a9a9;
+            }
+            &::-webkit-scrollbar-track {
+              background: #b0b0b0;
+              border: 0px none #ffffff;
+              border-radius: 100px;
+            }
+            &::-webkit-scrollbar-track:hover {
+              background: #c3c3c3;
+            }
+            &::-webkit-scrollbar-track:active {
+              background: #9f9c9c;
+            }
+            &::-webkit-scrollbar-corner {
+              background: transparent;
+            }
+          }
+
+          &-commentBox {
+            font-size: 0.85em;
+
+            &-text {
+
+              &-transform {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        &-right {
+          width: 35%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: end;
+          padding-left: 0.5em;
+
+          &-head {            
+
+            &-nickname {
+              font-weight: bold;
+            }
+
+            &-date {
+              font-size: 0.7em;
+            }
+          }
+
+          &-middle {
+
+            display: flex;
+            justify-content: flex-end;
+
+            &-comment {
+              display: block;
+              text-indent: -9999px;
+              width: 23px;
+              height: 23px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-image: url('../../../../../materials/images/comment.svg');
+              transition: all .2s ease-in-out;
+
+              &:hover {
+                transform: scale(1.1);
+
+              }
+            }
+          }
+
+          &-bottom {
+            display: flex;
+            justify-content: flex-end;
+
+            &-options {
+
+              &-moreOptions {
+                display: block;
+                text-indent: -9999px;
+                width: 20px;
+                height: 20px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-image: url('../../../../../materials/icones/moreOptions.svg');
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                  transform: scale(1.1);
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-preview {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width : 768px) {
+
+    &-main {
+
+      &-imageBox {
+
+        height: 115px;
+        width: 30%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+          height: 115px;
+          object-fit: contain;
+        }
+      }
+
+      &-content {
+        padding: 1em;
+        width: 70%;
+
+        &-left {
+          width: 65%;
+          font-size: 1em;
+          padding-right: 1em;
+
+          &-text {
+            max-height: 105px;
+          }
+
+          &-commentBox {
+            font-size: 0.9em;
+          }
+        }
+
+        &-right {
+          width: 35%;
+          padding-left: 1em;
+
+          &-head {            
+
+            &-nickname {
+              font-size: 1.1em;
+            }
+
+            &-date {
+              font-size: 0.85em;
+            }
+          }
+
+          &-middle {
+
+            &-comment {
+              width: 28px;
+              height: 28px;
+            }
+          }
+
+          &-bottom {
+
+            &-options {
+
+              &-moreOptions {
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width : 1200px) {
+
+    &-main {
+
+      &-imageBox {
+
+        height: 150px;
+        width: 40%;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f6ebfa;
+
+        img {
+          height: 150px;
+          object-fit: contain;
+          background-color: #fefbff;
+        }
+      }
+
+      &-content {
+        padding: 1.5em;
+        width: 60%;
+
+        &-text {
+          max-height: 105px;
+        }
+
+        &-left {
+          width: 70%;
+          font-size: 1.1em;
+          padding-right: 1.5em;
+
+          &-commentBox {
+            font-size: 1em;
+          }
+        }
+
+        &-right {
+          width: 35%;
+          padding-left: 1.3em;
+
+          &-head {            
+
+            &-nickname {
+              font-size: 1.2em;
+            }
+
+            &-date {
+              font-size: 0.9em;
+            }
+          }
+
+          &-middle {
+
+            &-comment {
+              width: 33px;
+              height: 33px;
+            }
+          }
+
+          &-bottom {
+
+            &-options {
+
+              &-moreOptions {
+                width: 23px;
+                height: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-preview {
+
+      display: flex;
+      padding: 0 1.5em;
+
+      &-box {
+        
+        margin: 5px 0 5px;
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+        padding-left: 40em;
+
+        &-imageBox {
+
+          img {
+
+            width: 35px;
+            height: 35px;
+            margin: 0 0.5em;
+            object-fit: cover;
+          }
+        }
+
+        &-arrow {
+
+          
+          margin: 5px 0.3em 5px;
+          display: block;
+          text-indent: -9999px;
+          width: 20px;
+          height: 20px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-image: url('../../../../../materials/images/arrowOpen.svg');
+          transition: all .2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+
+            }
+        }
+      }
+    }
+  }
+}

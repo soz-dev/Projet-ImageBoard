@@ -1,0 +1,57 @@
+.modalImage {
+
+  @media only screen and (min-width : 1px) {
+
+    display: flex;
+    height: 80vh;
+    background: white;
+      
+      &-imageBox {
+        display: flex;
+        height: 100%;
+        margin: 0 auto;
+  
+        &-div {
+          width: 100%;
+          margin: 0 auto;
+          height: 100%;
+          display: flex;
+  
+            img {
+              display: inline-flex;
+              margin: 0 auto;
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+          }
+        }
+      }
+    }
+  
+  // A partir de 768px de large : Vue windows
+  @media only screen and (min-width : 768px) {
+    &-imageBox {
+
+      &-div {
+
+        img {
+          min-width: 600px;
+        }
+      }
+    }
+  }
+  
+  // A partir de 1200px de large : Vue windows
+  @media only screen and (min-width : 1200px) {
+    
+    &-imageBox {
+
+      &-div {
+
+        img {
+          min-width: 1200px;
+        }
+      }
+    }
+  }
+}
