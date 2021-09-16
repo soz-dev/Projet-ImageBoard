@@ -83,7 +83,7 @@
     "react-share": "^3.0.0",
     "redux": "^4.0.1",
     "serialize-javascript": "^2.1.2",
-    "set-value": "^3.0.1",
+    "set-value": "^4.0.1",
     "terser-webpack-plugin": "^1.4.1",
     "validator": "^11.1.0"
   }
